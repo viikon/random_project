@@ -57,30 +57,6 @@ class TeamManagerGUI(tk.Frame):
         self.pack(fill=tk.BOTH, expand=True)
         self.create_widgets()
 
-    # def create_widgets(self):
-    #     self.load_button = tk.Button(self, text="Загрузить команды", font=("Cascadia Code ExtraLight", 14),
-    #                                  command=self.load_teams)
-    #     self.load_button.grid(row=0, column=0, padx=10, pady=10)
-    #     self.select_teams_button = tk.Button(self, text="Выбрать команды", font=("Cascadia Code ExtraLight", 14),
-    #                                          command=self.select_teams)
-    #     self.select_teams_button.grid(row=0, column=1, padx=10, pady=10)
-    #     self.clear_teams_button = tk.Button(self, text="Очистить список команд", font=("Cascadia Code ExtraLight", 14),
-    #                                         command=self.clear_teams)
-    #     self.clear_teams_button.grid(row=0, column=2, padx=10, pady=10)
-    #     self.quit_button = tk.Button(self, text="Выход", font=("Cascadia Code ExtraLight", 14),
-    #                                  command=self.master.destroy)
-    #     self.quit_button.grid(row=0, column=3, padx=10, pady=10)
-    #     self.teams_listbox = tk.Listbox(self, font=("Cascadia Code ExtraLight", 12))
-    #     self.teams_listbox.grid(row=1, column=0, columnspan=3, padx=10, pady=10, sticky=tk.NSEW)
-    #
-    #     # self.font_sizebox = tk.Listbox(self, font=("Cascadia Code ExtraLight", 12))
-    #     # self.font_sizebox.grid(row=1, column=3, columnspan=1, padx=10, pady=10)
-    #
-    #     self.selected_teams_var = tk.StringVar()
-    #     self.selected_teams_label = tk.Label(self, textvariable=self.selected_teams_var,
-    #                                          font=("Cascadia Code ExtraLight", 35))
-    #     self.selected_teams_label.grid(row=2, column=0, columnspan=4, padx=10, pady=10, sticky=tk.NSEW)
-
     def create_widgets(self):
         self.load_button = tk.Button(self, text="Загрузить команды", font=("Cascadia Code ExtraLight", 14),
                                      command=self.load_teams)
